@@ -1,0 +1,4 @@
+<h1>POST</h1>
+<ul>
+    <app-post *ngFor="let item of posts | async" [item]="item" (clickPost)="escucharClick($event)"></app-post>
+</ul>
